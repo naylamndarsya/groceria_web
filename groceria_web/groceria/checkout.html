@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Groceria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="app-layout">
+
+<nav class="app-navbar">
+  <a href="dashboard.html" class="brand">
+    <span class="brand-icon">🥦</span>
+    <span class="brand-name">Groceria</span>
+  </a>
+  <div class="app-nav-right">
+    <button onclick="window.location.href='dashboard.html'">← Kembali</button>
+  </div>
+</nav>
+
+<main class="app-main" style="max-width:600px;">
+  <h1 class="app-title">💳 Checkout</h1>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-title">🧾 Detail Belanja</div>
+    <div id="bill">
+      <div class="empty-state"><div class="es-icon">🛒</div><p>Loading...</p></div>
+    </div>
+    <div class="checkout-total">
+      <span>Total Pembayaran</span>
+      <span id="totalBill">Rp 0</span>
+    </div>
+  </div>
+
+  <div class="card" id="payCard">
+    <button class="app-btn app-btn-primary app-btn-full" onclick="pay()" style="font-size:16px;padding:16px;">
+      ✅ Bayar Sekarang
+    </button>
+  </div>
+
+  <!-- SUCCESS STATE -->
+  <div class="card" id="struk" style="display:none; text-align:center; padding:48px 24px;">
+    <div style="font-size:64px;margin-bottom:16px;">✅</div>
+    <h2 style="color:var(--green-primary);margin-bottom:8px;">Pembayaran Berhasil!</h2>
+    <p style="color:var(--text-muted);font-size:15px;">Terima kasih sudah berbelanja di Groceria.<br/>Stok kamu sudah diperbarui otomatis.</p>
+    <p style="color:var(--text-muted);font-size:13px;margin-top:12px;">Mengalihkan ke dashboard...</p>
+  </div>
+</main>
+
+<div id="toastContainer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="checkout.js"></script>
+
+</body>
+</html>

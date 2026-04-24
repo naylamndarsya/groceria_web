@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk — Groceria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-page">
+
+<div class="auth-card">
+  <div class="auth-logo">
+    <span class="brand-icon">🥦</span>
+    <span class="brand-name">Groceria</span>
+    <p>Smart Grocery Management</p>
+  </div>
+
+  <h2>Masuk ke akun kamu</h2>
+
+  <div class="auth-input-group">
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+  </div>
+
+  <button class="btn-primary" onclick="login()">Masuk →</button>
+
+  <div class="auth-error" id="authError"></div>
+
+  <p class="auth-footer">
+    Belum punya akun? <a href="register.html">Daftar sekarang</a>
+  </p>
+
+  <p class="auth-footer" style="margin-top:8px;">
+    <a href="landing.html">← Kembali ke halaman utama</a>
+  </p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riwayat Transaksi — Groceria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="app-layout">
+
+<nav class="app-navbar">
+  <a href="dashboard.html" class="brand">
+    <span class="brand-icon">🥦</span>
+    <span class="brand-name">Groceria</span>
+  </a>
+  <div class="app-nav-right">
+    <button onclick="window.location.href='dashboard.html'">← Kembali ke Dashboard</button>
+  </div>
+</nav>
+
+<main class="app-main" style="max-width:700px;">
+  <h1 class="app-title">📜 Riwayat Transaksi</h1>
+
+  <!-- SUMMARY ANALISIS -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-title">📈 Ringkasan Belanja</div>
+    <div id="summarySection">
+      <div class="empty-state"><div class="es-icon">📊</div><p>Loading...</p></div>
+    </div>
+  </div>
+
+  <!-- LIST TRANSAKSI -->
+  <div id="historyList">
+    <div class="empty-state"><div class="es-icon">📜</div><p>Loading riwayat...</p></div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="history.js"></script>
+
+</body>
+</html>
