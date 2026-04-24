@@ -1,4 +1,4 @@
-# 🥦 Groceria — Smart Grocery Management App
+# Groceria — Smart Grocery Management App
 
 ## Hasil Pengujian
 
@@ -17,12 +17,12 @@
 | 9  | Hapus item dari keranjang       | Klik tombol "✕" pada item                            | Item terhapus dari database dan UI diperbarui            | Pass |
 | 10 | Set budget bulanan              | Input angka dan klik "Simpan Budget"                 | Budget tersimpan di localStorage, UI diperbarui          | Pass |
 | 11 | Deteksi Mode Hemat              | Total belanja ≥ 80% dari budget                      | Banner "Mode Hemat Aktif" muncul otomatis                | Pass |
-| 12 | Auto Shopping List              | Klik tombol "🔄 Auto Shopping List"                  | Item dengan stok ≤ 2 otomatis ditambahkan ke keranjang   | Pass |
+| 12 | Auto Shopping List              | Klik tombol "Auto Shopping List"                  | Item dengan stok ≤ 2 otomatis ditambahkan ke keranjang   | Pass |
 | 13 | Notifikasi stok rendah          | Stok salah satu item ≤ 2                             | Banner notifikasi merah muncul dengan nama item          | Pass |
 | 14 | Smart Recommendation            | Terdapat riwayat transaksi                           | Muncul daftar rekomendasi produk berdasarkan frekuensi   | Pass |
 | 15 | Proses checkout                 | Keranjang berisi item, klik "Bayar Sekarang"         | Transaksi tersimpan, stok diupdate, cart dikosongkan     | Pass |
 | 16 | Checkout dengan keranjang kosong| Klik checkout tanpa item                             | Muncul pesan "Keranjang kosong!"                         | Pass |
-| 17 | Lihat riwayat transaksi         | Klik menu "📜 Riwayat"                               | Semua transaksi tampil dikelompokkan per sesi + analisis | Pass |
+| 17 | Lihat riwayat transaksi         | Klik menu "Riwayat"                               | Semua transaksi tampil dikelompokkan per sesi + analisis | Pass |
 | 18 | Analisis riwayat belanja        | Terdapat minimal 1 transaksi                         | Tampil total pengeluaran, jumlah item, produk terbanyak  | Pass |
 | 19 | Kurangi stok manual             | Klik "- Pakai" pada item di Stok Saya                | Stok berkurang 1, UI diperbarui                          | Pass |
 | 20 | Logout                          | Klik tombol "Keluar"                                 | Sesi berakhir, redirect ke halaman login                 | Pass |
