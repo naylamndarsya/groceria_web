@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🥦 Groceria — Smart Grocery Management App
 
 ## Hasil Pengujian
@@ -52,6 +51,3 @@
 | 3  | Akses history tanpa login            | Redirect otomatis ke halaman login                | Pass |
 | 4  | Data terpisah antar pengguna         | Setiap user hanya melihat data miliknya sendiri   | Pass |
 | 5  | Session persist setelah refresh      | Pengguna tetap login setelah refresh halaman      | Pass |
-=======
-# groceria_web
->>>>>>> 0adcd4c5012500285106ff2c4c01a6560f0ac24e
